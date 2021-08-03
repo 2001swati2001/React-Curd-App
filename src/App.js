@@ -16,19 +16,19 @@ function App() {
         <Navbar />
           <Switch>
             
-            <Route exact path="/"> 
+            <Route exact path={process.env.PUBLIC_URL + '/'}> 
               <Home /> 
             </Route>
 
-            <Route exact path="/users/add"> 
+            <Route exact path={process.env.PUBLIC_URL + "/users/add"}> 
               <AddUser /> 
             </Route>
 
-            <Route exact path="/users/edit/:id"> 
+            <Route exact path={process.env.PUBLIC_URL + "/users/edit/:id"}>  
               <EditUser /> 
             </Route>
 
-            <Route exact path="/users/view/:id"> 
+            <Route exact path={process.env.PUBLIC_URL +"/users/view/:id"}> 
               <ViewUser /> 
             </Route>
 
